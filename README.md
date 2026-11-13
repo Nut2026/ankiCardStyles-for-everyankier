@@ -1,4 +1,4 @@
-## ankiCardStyles For Every Ankier
+## ankiCardStyles For Everyankier
 
 Meet these card styles - delightful as they are, why not integrate them into your Anki reviews?
 
