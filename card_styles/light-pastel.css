@@ -1,0 +1,274 @@
+/*
+Light pastel with 20% margin on the left and 20% margin on the right.
+Decorative half-borders on the Front: top-left and bottom-right, Back: top-right and bottom-left corners.
+Colours: Cool muted grey, white, dark green/blue/brown/orange borders
+*/
+
+html, body {
+  margin: 0 !important;
+  padding: 0 !important;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background: transparent !important;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Inter", "Helvetica Neue", Arial, sans-serif;
+}
+
+#qa, .card, .card1, .card2, .card3 {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  max-width: none !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.bg {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(
+    135deg,
+    #e8ecf2 0%,
+    #d6dee8 50%,
+    #c9d4e0 100%
+  );
+}
+
+.card-wrapper {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 24px 20%;
+  box-sizing: border-box;
+}
+
+.pastel-card {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  min-height: 180px;
+  padding: 40px 44px;
+  box-sizing: border-box;
+
+  background: #ffffff;
+
+  border-radius: 28px;
+  border: 1px solid rgba(20, 40, 70, 0.06);
+
+  box-shadow:
+    0 20px 50px rgba(60, 90, 130, 0.18),
+    0 6px 16px rgba(60, 90, 130, 0.10);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.pastel-card::before,
+.pastel-card::after {
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  pointer-events: none;
+  box-sizing: border-box;
+
+  border: 4px solid transparent;
+}
+
+.pastel-card.front::before {
+  top: 0;
+  left: 0;
+  border-top-color: #1f4d5c;
+  border-left-color: #1f4d5c;
+  border-top-left-radius: 28px;
+  border-bottom-right-radius: 0;
+  -webkit-mask-image: linear-gradient(to bottom, #000 0%, transparent 100%);
+          mask-image: linear-gradient(to bottom, #000 0%, transparent 100%);
+}
+
+.pastel-card.front::after {
+  bottom: 0;
+  right: 0;
+  border-bottom-color: #1e3a5f;
+  border-right-color: #1e3a5f;
+  border-bottom-right-radius: 28px;
+  border-top-left-radius: 0;
+  -webkit-mask-image: linear-gradient(to top, #000 0%, transparent 100%);
+          mask-image: linear-gradient(to top, #000 0%, transparent 100%);
+}
+
+.pastel-card.back::before {
+  top: 0;
+  right: 0;
+  border-top-color: #2b2b2b;
+  border-right-color: #2b2b2b;
+  border-top-right-radius: 28px;
+  border-bottom-left-radius: 0;
+  -webkit-mask-image: linear-gradient(to bottom, #000 0%, transparent 100%);
+          mask-image: linear-gradient(to bottom, #000 0%, transparent 100%);
+}
+
+.pastel-card.back::after {
+  bottom: 0;
+  left: 0;
+  border-bottom-color: #b85c1e;
+  border-left-color: #b85c1e;
+  border-bottom-left-radius: 28px;
+  border-top-right-radius: 0;
+  -webkit-mask-image: linear-gradient(to top, #000 0%, transparent 100%);
+          mask-image: linear-gradient(to top, #000 0%, transparent 100%);
+}
+
+.pastel-card .edge-top,
+.pastel-card .edge-bottom {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90px;
+  height: 4px;
+  pointer-events: none;
+  border-radius: 4px;
+  z-index: 1;
+}
+
+.pastel-card .edge-top {
+  top: 0;
+  background: #1f4d5c;
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    #000 50%,
+    transparent 100%
+  );
+          mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    #000 50%,
+    transparent 100%
+  );
+}
+
+.pastel-card .edge-bottom {
+  bottom: 0;
+  background: #1e3a5f;
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    #000 50%,
+    transparent 100%
+  );
+          mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    #000 50%,
+    transparent 100%
+  );
+}
+
+.pastel-card.back .edge-top    { background: #2b2b2b; }
+.pastel-card.back .edge-bottom { background: #b85c1e; }
+
+.content {
+  font-size: 24px;
+  line-height: 1.5;
+  color: #1e2a3a;
+  text-align: center;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  max-width: 100%;
+}
+
+.content.answer {
+  font-size: 22px;
+  color: #3a4a5a;
+  font-weight: 400;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 16px;
+  margin-top: 12px;
+}
+
+@media (prefers-color-scheme: dark) {
+  .bg {
+    background: linear-gradient(
+      135deg,
+      #1a2029 0%,
+      #212a35 50%,
+      #2a3340 100%
+    );
+  }
+  .pastel-card {
+    background: #2a3340;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+  }
+  .content { color: #e8eef5; }
+  .content.answer { color: #c8d2dd; }
+
+  .pastel-card.front::before {
+    border-top-color: #2d6b80;
+    border-left-color: #2d6b80;
+  }
+  .pastel-card.front::after {
+    border-bottom-color: #2d5480;
+    border-right-color: #2d5480;
+  }
+  .pastel-card.back::before {
+    border-top-color: #4a4a4a;
+    border-right-color: #4a4a4a;
+  }
+  .pastel-card.back::after {
+    border-bottom-color: #d97a33;
+    border-left-color: #d97a33;
+  }
+
+  .pastel-card.front .edge-top    { background: #2d6b80; }
+  .pastel-card.front .edge-bottom { background: #2d5480; }
+  .pastel-card.back  .edge-top    { background: #4a4a4a; }
+  .pastel-card.back  .edge-bottom { background: #d97a33; }
+}
+
+@media (max-width: 600px) {
+  .card-wrapper {
+    padding: 16px 8%;
+  }
+  .pastel-card {
+    padding: 32px 24px;
+    border-radius: 22px;
+    min-height: 140px;
+  }
+  .content { font-size: 19px; }
+  .content.answer { font-size: 17px; }
+
+  .pastel-card::before,
+  .pastel-card::after {
+    width: 50px;
+    height: 50px;
+    border-width: 3px;
+  }
+
+  .pastel-card.front::before { border-top-left-radius: 22px; }
+  .pastel-card.front::after  { border-bottom-right-radius: 22px; }
+  .pastel-card.back::before  { border-top-right-radius: 22px; }
+  .pastel-card.back::after   { border-bottom-left-radius: 22px; }
+
+  .pastel-card .edge-top,
+  .pastel-card .edge-bottom {
+    width: 64px;
+    height: 3px;
+  }
+}
