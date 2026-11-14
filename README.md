@@ -6,8 +6,6 @@ Meet these card styles - delightful as they are, why not integrate them into you
 
 Thanks for contributing! Feel free to open an Issue to suggest a card style or a PR if you have one you're excited to share!
 
-> By the Anki community, for the Anki community. Here we proudly say: FOSS Forever!!
-
 ### 🎉 Show Your Support
 
 If you find the cards absolutely stunning, feel free to:
@@ -15,6 +13,8 @@ If you find the cards absolutely stunning, feel free to:
 - 🍴 Fork it to explore
 - 👀 Watch for updates
 - 📢 Sharing is caring! Let's share ankiCardStyles!
+
+> By the Anki community, for the Anki community. Here we proudly say: FOSS Forever!!
 
 ---
 
