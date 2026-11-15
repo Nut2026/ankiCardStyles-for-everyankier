@@ -21,6 +21,8 @@ If you find the cards absolutely stunning, feel free to:
 ### Styles for Wonderful Times 
 Pick one (or three) of your favourites and - why wait - try them out on your cards! And if anyone asks about you and your cool cards, don't be shy and point them to the nice ankiCardStyles repo. ;)
 
+**Tip:** If you encounter symptoms like "checkerboard/pixel blocks + background colour + no text, fixed only by scrolling" - these are rendering-layer failures in the WebView; these aren't linked to styling code, and are most likely a graphics driver / hardware acceleration conflict. In that case, you can try heading to Anki's `Tools > Preferences > Video driver` and change it to `Software`. =) It has worked for me!
+
 #### 1. Dark Pastel
 - **🌟 Creator's Favourite 🌟**
 - File: `dark-pastel.css`
