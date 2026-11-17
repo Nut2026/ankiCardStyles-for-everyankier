@@ -1,0 +1,116 @@
+/*
+Dark neobrutalism with 20% margin on the left and 20% margin on the right (8% padding on mobile).
+Colours: Cool charcoal / dark grey with a blue tinge
+*/
+
+.card {
+    font-family: 'Courier New', 'Monaco', monospace;
+    font-size: 20px;
+    line-height: 1.6;
+    text-align: center;
+    color: #dce6f0;
+    background-color: #14181d;
+    box-shadow: 8px 0px 0px #3a424c;
+    border-bottom: none;
+    padding: 30px 20%;
+    box-sizing: border-box;
+    margin: 0;
+    min-height: 100vh;
+    height: auto;
+    overflow-y: auto;
+}
+
+.question {
+    text-align: center;
+    letter-spacing: 1px;
+    color: #dce6f0;
+    background-color: #262c33;
+    padding: 16px 24px;
+    border: 4px solid #4a525c;
+    box-shadow: 6px 6px 0px #4a525c;
+    display: inline-block;
+    margin: 10px auto 25px auto;
+}
+
+.answer {
+    text-align: left;
+    background-color: #0a0d10;
+    padding: 22px 28px;
+    border: 4px solid #3a424c;
+    box-shadow: 6px 6px 0px #3a424c;
+    margin: 10px 0;
+    font-weight: 500;
+    color: #dce6f0;
+}
+
+.center-block {
+    display: inline-block;
+    text-align: left;
+    background-color: #14181d;
+    padding: 16px 24px;
+    border: 4px solid #3a424c;
+    box-shadow: 6px 6px 0px #3a424c;
+    color: #dce6f0;
+}
+
+hr {
+    border: none;
+    border-top: none;
+    border-bottom: none;
+    margin: 20px 0;
+    height: 0;
+}
+
+code, .highlight {
+    background-color: #1c2228;
+    padding: 2px 8px;
+    border: 2px solid #3a424c;
+    font-weight: 700;
+    color: #b8c4d0;
+}
+
+button, .btn {
+    background-color: #1c2228;
+    border: 4px solid #3a424c;
+    box-shadow: 4px 4px 0px #3a424c;
+    padding: 10px 20px;
+    font-family: 'Courier New', monospace;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.05s ease;
+    color: #dce6f0;
+}
+
+button:active, .btn:active {
+    transform: translate(4px, 4px);
+    box-shadow: 0px 0px 0px #3a424c;
+}
+
+.card .extra-accent {
+    background-color: #101418;
+    border: 4px solid #3a424c;
+    box-shadow: 6px 6px 0px #3a424c;
+    padding: 12px 20px;
+    color: #dce6f0;
+}
+
+.accent-slate {
+    background-color: #1e2429;
+    border: 4px solid #3a424c;
+    box-shadow: 6px 6px 0px #3a424c;
+    color: #c4ced8;
+}
+
+.accent-steel {
+    background-color: #161c22;
+    border: 4px solid #3a424c;
+    box-shadow: 6px 6px 0px #3a424c;
+    color: #aeb9c4;
+}
+
+@media (max-width: 600px) {
+    .card {
+        padding: 30px 8%;
+    }
+}
