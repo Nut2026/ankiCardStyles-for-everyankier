@@ -36,8 +36,8 @@ Pick one (or three) of your favourites and - why wait - try them out on your car
 
 #### 3. Dark Neobrutalism
 - Date Added: 18/11/2026
-![`Dark Neobrutalism's Demo.](assets/dark-neobrutalism.jpg?v=2)
+![`Dark Neobrutalism's Demo.](assets/dark-neobrutalism.jpg)
 
 #### 4. Light Neobrutalism
 - Date Added: 18/11/2026
-![`Light Neobrutalism's Demo.](assets/light-neobrutalism.jpg?v=2)
+![`Light Neobrutalism's Demo.](assets/light-neobrutalism.jpg)
