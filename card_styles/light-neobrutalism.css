@@ -1,0 +1,183 @@
+/*
+Light neobrutalism with 20% margin on the left and 20% margin on the right (8% padding on mobile).
+Colours: Light grey with a tinge of blue for the card and background, dark grey with a tinge of blue for the borders
+*/
+
+.card {
+    font-family: 'Courier New', 'Monaco', monospace;
+    font-size: 20px;
+    line-height: 1.6;
+    text-align: center;
+    color: #1e2a3a;
+    background-color: #e8ecf2;
+    box-shadow: 8px 0px 0px #2f3844;
+    border-bottom: none;
+    padding: 30px 20%;
+    box-sizing: border-box;
+    margin: 0;
+    min-height: 100vh;
+    height: auto;
+    overflow-y: auto;
+}
+
+.question {
+    text-align: center;
+    letter-spacing: 1px;
+    color: #1e2a3a;
+    background-color: #ffffff;
+    padding: 16px 24px;
+    border: 4px solid #2f3844;
+    box-shadow: 6px 6px 0px #2f3844;
+    display: inline-block;
+    margin: 10px auto 25px auto;
+}
+
+.answer {
+    text-align: left;
+    background-color: #ffffff;
+    padding: 22px 28px;
+    border: 4px solid #2f3844;
+    box-shadow: 6px 6px 0px #2f3844;
+    margin: 10px 0;
+    font-weight: 500;
+    color: #1e2a3a;
+}
+
+.center-block {
+    display: inline-block;
+    text-align: left;
+    background-color: #ffffff;
+    padding: 16px 24px;
+    border: 4px solid #2f3844;
+    box-shadow: 6px 6px 0px #2f3844;
+    color: #1e2a3a;
+}
+
+hr {
+    border: none;
+    border-top: none;
+    border-bottom: none;
+    margin: 20px 0;
+    height: 0;
+}
+
+code, .highlight {
+    background-color: #f2f5f9;
+    padding: 2px 8px;
+    border: 2px solid #2f3844;
+    font-weight: 700;
+    color: #1e2a3a;
+}
+
+button, .btn {
+    background-color: #ffffff;
+    border: 4px solid #2f3844;
+    box-shadow: 4px 4px 0px #2f3844;
+    padding: 10px 20px;
+    font-family: 'Courier New', monospace;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.05s ease;
+    color: #1e2a3a;
+}
+
+button:active, .btn:active {
+    transform: translate(4px, 4px);
+    box-shadow: 0px 0px 0px #2f3844;
+}
+
+.card .extra-accent {
+    background-color: #f2f5f9;
+    border: 4px solid #2f3844;
+    box-shadow: 6px 6px 0px #2f3844;
+    padding: 12px 20px;
+    color: #1e2a3a;
+}
+
+.accent-slate {
+    background-color: #ffffff;
+    border: 4px solid #2f3844;
+    box-shadow: 6px 6px 0px #2f3844;
+    color: #1e2a3a;
+}
+
+.accent-steel {
+    background-color: #f2f5f9;
+    border: 4px solid #2f3844;
+    box-shadow: 6px 6px 0px #2f3844;
+    color: #1e2a3a;
+}
+
+@media (prefers-color-scheme: dark) {
+    .card {
+        color: #e8eef5;
+        background-color: #1a2029;
+        box-shadow: 8px 0px 0px #2f3844;
+    }
+
+    .question {
+        color: #e8eef5;
+        background-color: #2a3340;
+        border: 4px solid #2f3844;
+        box-shadow: 6px 6px 0px #2f3844;
+    }
+
+    .answer {
+        background-color: #2a3340;
+        border: 4px solid #2f3844;
+        box-shadow: 6px 6px 0px #2f3844;
+        color: #e8eef5;
+    }
+
+    .center-block {
+        background-color: #2a3340;
+        border: 4px solid #2f3844;
+        box-shadow: 6px 6px 0px #2f3844;
+        color: #e8eef5;
+    }
+
+    code, .highlight {
+        background-color: #212a35;
+        border: 2px solid #2f3844;
+        color: #e8eef5;
+    }
+
+    button, .btn {
+        background-color: #2a3340;
+        border: 4px solid #2f3844;
+        box-shadow: 4px 4px 0px #2f3844;
+        color: #e8eef5;
+    }
+
+    button:active, .btn:active {
+        box-shadow: 0px 0px 0px #2f3844;
+    }
+
+    .card .extra-accent {
+        background-color: #212a35;
+        border: 4px solid #2f3844;
+        box-shadow: 6px 6px 0px #2f3844;
+        color: #e8eef5;
+    }
+
+    .accent-slate {
+        background-color: #2a3340;
+        border: 4px solid #2f3844;
+        box-shadow: 6px 6px 0px #2f3844;
+        color: #e8eef5;
+    }
+
+    .accent-steel {
+        background-color: #212a35;
+        border: 4px solid #2f3844;
+        box-shadow: 6px 6px 0px #2f3844;
+        color: #e8eef5;
+    }
+}
+
+@media (max-width: 600px) {
+    .card {
+        padding: 30px 8%;
+    }
+}
