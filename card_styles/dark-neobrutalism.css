@@ -1,11 +1,12 @@
 /*
 -- Dark Neobrutalism --
+Text is all bold in Front, but follows your text in Back.
 Colours: Cool charcoal / dark grey with a blue tinge for the background, card, and its borders
 */
 
 .card {
-    font-family: 'Courier New', 'Monaco', monospace;
-    font-size: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Inter", "Helvetica Neue", Arial, sans-serif;
+    font-size: 24px;
     line-height: 1.6;
     text-align: center;
     color: #dce6f0;
@@ -22,6 +23,8 @@ Colours: Cool charcoal / dark grey with a blue tinge for the background, card, a
 
 .question {
     text-align: center;
+    font-weight: 700;
+    font-size: 24px;
     letter-spacing: 1px;
     color: #dce6f0;
     background-color: #262c33;
@@ -40,6 +43,7 @@ Colours: Cool charcoal / dark grey with a blue tinge for the background, card, a
     box-shadow: 6px 6px 0px #3a424c;
     margin: 10px 0;
     font-weight: 500;
+    font-size: 24px;
     color: #dce6f0;
 }
 
@@ -50,6 +54,7 @@ Colours: Cool charcoal / dark grey with a blue tinge for the background, card, a
     padding: 16px 24px;
     border: 4px solid #3a424c;
     box-shadow: 6px 6px 0px #3a424c;
+    font-size: 24px;
     color: #dce6f0;
 }
 
@@ -66,6 +71,7 @@ code, .highlight {
     padding: 2px 8px;
     border: 2px solid #3a424c;
     font-weight: 700;
+    font-size: 24px;
     color: #b8c4d0;
 }
 
@@ -74,8 +80,9 @@ button, .btn {
     border: 4px solid #3a424c;
     box-shadow: 4px 4px 0px #3a424c;
     padding: 10px 20px;
-    font-family: 'Courier New', monospace;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Inter", "Helvetica Neue", Arial, sans-serif;
     font-weight: 700;
+    font-size: 24px;
     text-transform: uppercase;
     cursor: pointer;
     transition: all 0.05s ease;
@@ -92,6 +99,7 @@ button:active, .btn:active {
     border: 4px solid #3a424c;
     box-shadow: 6px 6px 0px #3a424c;
     padding: 12px 20px;
+    font-size: 24px;
     color: #dce6f0;
 }
 
@@ -99,6 +107,7 @@ button:active, .btn:active {
     background-color: #1e2429;
     border: 4px solid #3a424c;
     box-shadow: 6px 6px 0px #3a424c;
+    font-size: 24px;
     color: #c4ced8;
 }
 
@@ -106,6 +115,7 @@ button:active, .btn:active {
     background-color: #161c22;
     border: 4px solid #3a424c;
     box-shadow: 6px 6px 0px #3a424c;
+    font-size: 24px;
     color: #aeb9c4;
 }
 
